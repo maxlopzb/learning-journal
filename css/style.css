@@ -23,9 +23,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 370px;
-    margin: 0 auto;
-    padding: 0 5px;
+    /* max-width: 370px; */
+    /* margin: 0 auto; */
+    padding: 0 20px;
 }
 
 nav > .nav-logo {
@@ -68,13 +68,13 @@ nav > ul a {
     height: 293px;
 }
 
-.hero-section > h1 {
+.hero-section div > h1 {
     margin: 8px 0;
     line-height: 1.082;
     letter-spacing: -0.03em;
 }
 
-.hero-section > time {
+.hero-section div > time {
     text-transform: uppercase;
     font-size: 0.75rem;
 }
@@ -85,6 +85,10 @@ nav > ul a {
 
 .blogs-section > .blog-post {
     margin-bottom: 42px;
+}
+
+.blogs-section > .blog-post:last-of-type {
+    margin-bottom: 27px;
 }
 
 .blogs-section > .blog-post time {
@@ -110,6 +114,17 @@ nav > ul a {
     width: 100%;
 }
 
+.blogs-section > .view-more-btn {
+    display: block;
+    margin: 0 auto;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+}
+
 footer {
     background-color: #202020;
     color: #ECECEC;
@@ -125,4 +140,58 @@ footer > p {
 footer > small {
     color: #D7D7D7;
     font-size: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        background-image: url('../images/blog-image-hero-desktop.png');
+        height: 488px;
+        padding: 60px 53px;
+    }
+
+    .hero-section div > h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section div > p {
+        max-width: 614px;
+    }
+
+    .hero-section div > time {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 24px 53px;
+    }
+
+    nav > .nav-logo span {
+        font-size: 1.25rem;
+    }
+
+    nav > .nav-logo img {
+        width: 34px;
+    }
+
+    nav > ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav > ul a {
+        font-size: 1rem;
+    }
+
+    .blogs-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 53px;
+        column-gap: 26px;
+    }
+
+    .blogs-section .blog-post > img {
+        width: 309px;
+        height: 232px;
+        object-fit: cover;
+    }
 }
