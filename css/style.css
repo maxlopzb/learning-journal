@@ -109,3 +109,20 @@ nav > ul a {
     display: block;
     width: 100%;
 }
+
+footer {
+    background-color: #202020;
+    color: #ECECEC;
+    text-align: center;
+    padding: 37px 0;
+}
+
+footer > p {
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+footer > small {
+    color: #D7D7D7;
+    font-size: 0.75rem;
+}
