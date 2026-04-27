@@ -90,6 +90,10 @@ nav > ul a {
     margin-bottom: 42px;
 }
 
+.blogs-section > .blog-post:nth-child(n+4) {
+    display: none;
+}
+
 .blogs-section > .blog-post:last-of-type {
     margin-bottom: 27px;
 }
@@ -158,6 +162,10 @@ footer > small {
         grid-column: span 2;
         font-size: 0.885rem;
     }
+
+    .blogs-section > .blog-post:nth-child(3) {
+        grid-column: span 2;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -221,5 +229,13 @@ footer > small {
     .blogs-section > .view-more-btn {
         grid-column: span 3;
         font-size: 0.885rem;
+    }
+
+    .blogs-section > .blog-post:nth-child(n+4) {
+        display: block;
+    }
+
+    .blogs-section > .blog-post:nth-child(3) {
+        grid-column: auto;
     }
 }
