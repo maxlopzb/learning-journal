@@ -1,0 +1,54 @@
+body {
+    background-color: #FAFAFA;
+    color: #151515;
+}
+
+nav {
+    margin-bottom: 32px;
+}
+
+
+main {
+    padding: 0 20px;
+}
+
+h1 {
+    line-height: 1.082;
+    letter-spacing: -0.03em;
+    margin: 16px 0 15px;
+}
+
+main .my-journey-article time {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.my-journey-article img {
+    width: 100%;
+    margin: 35px 0;
+}
+
+.my-journey-article > section h2,
+.my-journey-article > section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.blogs-section {
+    padding: 34px 0px 56px;
+}
+
+.blogs-section > h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 27px;
+}
+
+.blogs-section > div.blog-post:nth-child(n+5) {
+    display: none;
+}
+
+.blogs-section > div.blog-post:nth-child(4) {
+    display: block;
+}
+

@@ -90,7 +90,7 @@ nav > ul a {
     margin-bottom: 42px;
 }
 
-.blogs-section > .blog-post:nth-child(n+4) {
+.blogs-section .blog-post:nth-child(n+4) {
     display: none;
 }
 
