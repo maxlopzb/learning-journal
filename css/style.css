@@ -18,6 +18,11 @@ p {
     margin: 0;
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     align-items: center;

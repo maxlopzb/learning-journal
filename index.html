@@ -10,7 +10,11 @@
     <body>
         <nav>
             <div class="nav-logo">
-                <img src="images/logo.png" alt="Learning journal logo"/>
+                <img 
+                    src="images/logo.png" 
+                    srcset="images/logo-desktop.png 34w, images/logo.png 24w"
+                    sizes="(min-width: 1085px) 34px, (max-width: 1085px) 24px"
+                    alt="Learning journal logo"/>
                 <span>My learning journal</span>
             </div>
             <ul>
@@ -24,11 +28,13 @@
         </nav>
         <main>
             <section class="hero-section">
-                <div>
-                    <time datetime="2022-07-23">July 23, 2022</time>
-                    <h1>My new journey as a bootcamp student.</h1>
-                    <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
-                </div>
+                <a href="article.html">
+                    <div>
+                        <time datetime="2022-07-23">July 23, 2022</time>
+                        <h1>My new journey as a bootcamp student.</h1>
+                        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                    </div>
+                </a>
             </section>
             <section class="blogs-section">
                 <div class="blog-post">
